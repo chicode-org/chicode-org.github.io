@@ -33,6 +33,7 @@ html,body {
 	margin-right:6%;
 	margin-top: 2.5%;
 	color:white;
+	text-decoration: underline;
 }
 .head > h1 {
 	color: white;
@@ -53,12 +54,13 @@ html,body {
 	display: block;
 	margin-left: 50px;
 	font-size: 2em;
+	text-decoration: none;
 }
 .head > button:hover {
 	transform: translateY(-1px);
 }
 .head > button:active {
-	background-color: #aaa;
+	background-color: #bbb;
 	transform: translateY(2px);
 }
 .head > .mainbtn:active {
@@ -68,10 +70,10 @@ html,body {
 	transition-duration: .1s;
 	padding: 10px;
 	font-size: 1em;
-	border-radius: 10px;
+	border-radius: 3px;
 	background-color: #eee;
 	border:none;
-	box-shadow: 0px 2px 5px #888;
+	box-shadow: 0px 1px 5px #888;
 }
 .head > .mainbtn {
 	background-color: #ffb412;
