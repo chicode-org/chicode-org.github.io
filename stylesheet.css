@@ -6,6 +6,7 @@ html,body {
 	padding: 0;
 	background-image: url(img/bg.png);
 	background-size:100%;
+	background-repeat: no-repeat;
 }
 /*
    Media Queries
@@ -20,8 +21,32 @@ html,body {
 	*/
 }
 .head > img {
-	width:15%;
+	width:25%;
 	padding:.5%;
+	padding-left: 3%;
+	padding-top: 1%;
+}
+.head > h2 {
+	float: right;
+	display: inline;
+	margin: 5%;
+	margin-right:6%;
+	margin-top: 2.5%;
+	color:white;
+}
+.head > h1 {
+	color: white;
+	font-size: 4.5em;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+.head > hr {
+	background-color: white;
+}
+.head > .sub {
+	float:left;
+	display: block;
 }
 .head > .logo-cont {
 	position:absolute;
