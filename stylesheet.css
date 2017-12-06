@@ -42,11 +42,17 @@ html,body {
 	margin-bottom: 0;
 }
 .head > hr {
-	background-color: white;
+	display:inline-block;
+	width: 1in;
+	height: 3px;
+	float: left;
+	margin-left:50px;
 }
 .head > .sub {
 	float:left;
 	display: block;
+	margin-left: 50px;
+	font-size: 2em;
 }
 .head > .logo-cont {
 	position:absolute;
