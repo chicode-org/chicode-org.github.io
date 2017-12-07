@@ -1,0 +1,101 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(img/bg.png);
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+/*
+   Media Queries
+*/
+/*
+   Header Style
+*/
+.head {
+	/*grn #7FF0C3*/
+	/*
+	background: linear-gradient(155deg, #EEaabb, #E0E5F7);
+	*/
+}
+.head > img {
+	width:25%;
+	padding:.5%;
+	padding-left: 3%;
+	padding-top: 1%;
+}
+.head > div {
+	display: inline;
+}
+h2 {
+	float: right;
+	display: inline;
+	margin: 5%;
+	margin-right:6%;
+	margin-top: 4%;
+	color:white;
+}
+.head > h1 {
+	color: white;
+	font-size: 4.5em;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+.head > hr {
+	display:inline-block;
+	width: 1in;
+	height: 3px;
+	float: left;
+	margin-left:50px;
+}
+.head > .sub {
+	float:left;
+	display: block;
+	margin-left: 50px;
+	font-size: 2em;
+}
+.head > button:hover {
+	transform: translateY(-1px);
+}
+.head > button:active {
+	background-color: #aaa;
+	transform: translateY(2px);
+}
+.head > .mainbtn:active {
+	background-color: #eea412
+}
+.head > button {
+	color: white;
+	transition-duration: .1s;
+	padding: 10px;
+	font-size: 1em;
+	border-radius: 3px;
+	background-color: #bbb;
+	border:none;
+	box-shadow: 0px 1px 5px #888;
+}
+.head > .mainbtn {
+	background-color: #ffb412;
+	margin-left:50px;
+	margin-right: 15px;
+}
+.head > .logo-cont {
+	position:absolute;
+	background-color: #ffffffbb;
+	width: 100%;
+	/*
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	border-radius: 20px;
+	box-shadow: 0px 3px 10px #777;
+	*/
+}
+/*
+   intro style
+*/
