@@ -39,11 +39,9 @@
 }
 .introtext {
 	grid-area: introtxt;
-	width:49vw;
 }
 .introimg {
 	grid-area: introimg;
-	width:49vw;
 }
 .
 .footer {
