@@ -1,5 +1,11 @@
 /*global styling */
+html {
+    font-size: 100%;
+}
 
+p {
+    font-size: 1rem;
+}
 /* media queries */
 
 /* header styling */
@@ -28,22 +34,54 @@
 .cont {
 	display:grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
 	grid-gap: 1vw;
 	grid-template-areas: 
 	"introimg introtxt"
-	"imgpanel imgpanel";
+	"imgpanel imgpanel"
+	"subtitle subtitle"
+	"sponsortext sponsortext"
+	"sponsors sponsors";
+	border:1px solid red;
 }
 .imgpanel {
 	grid-area: imgpanel;
+	border:1px solid red;
+	margin:0 auto;
+	margin-top: 5vw;
+}
+.panelimg {
+	width:65vw;
+	margin: 0 auto;
 }
 .introtext {
 	grid-area: introtxt;
+	border:1px solid blue;
 }
 .introimg {
 	grid-area: introimg;
+	border:1px solid green;
+	margin: 0 auto;
 }
-.
+.subtitle {
+	grid-area: subtitle;
+	border:1px solid yellow;
+	text-align: center;
+}
+.cont > h2 {
+	grid-area: sponsortext;
+	text-align: center;
+}
+.sponsors {
+	text-align: center;
+	grid-area: sponsors;
+	display: flex;
+	flex-wrap: wrap;
+}
+.sponsors > img {
+	display:flexbox;
+	height: 30vh;
+	margin: 0 auto;
+}
 .footer {
 	display:grid;
 }
