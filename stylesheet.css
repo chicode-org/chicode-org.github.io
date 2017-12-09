@@ -40,7 +40,8 @@ p {
 	"imgpanel imgpanel"
 	"subtitle subtitle"
 	"sponsortext sponsortext"
-	"sponsors sponsors";
+	"sponsors sponsors"
+	"people people";
 	border:1px solid red;
 }
 .imgpanel {
