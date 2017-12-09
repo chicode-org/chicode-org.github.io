@@ -72,17 +72,6 @@ p {
 	grid-area: sponsortext;
 	text-align: center;
 }
-.sponsors {
-	text-align: center;
-	grid-area: sponsors;
-	display: flex;
-	flex-wrap: wrap;
-}
-.sponsors > img {
-	display:flexbox;
-	height: 30vh;
-	margin: 0 auto;
-}
 .footer {
 	display:grid;
 }
