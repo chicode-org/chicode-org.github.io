@@ -1,18 +1,92 @@
 /*global styling */
-html {
-    font-size: 100%;
+html { font-family: 'Montserrat'; }
+button { margin-bottom: 15vh; }
+html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(mockup/img/bg.png);
+	background-size:100%;
+	background-repeat: no-repeat;
 }
-
-p {
-    font-size: 1rem;
+p {	font-size: 1.15em;
+	font-family: 'Lato';
 }
 /* media queries */
+@media (min-width: 0px) and (max-width: 500px) {
+	.cont {
+		margin: 1em;
+		margin-top: 0;
+		display:grid;
+		grid-gap: 1em;
+		grid-template-areas: 
+		"devmeetup"
+		"makeathons"
+		"missionhead"
+		"missiontxt"
+		"missionimg"
+		"socialmedia"
+		"contactform"
+		"sponsors"
+		"about";
+	}
+	.title > h1 {
+		font-size: 1.75em;
+		margin-right:3vw;
+		margin-top: 0;
+		margin-left: 3vw;
+		margin-bottom: 0;
+		color:white;
+	}
+	.subtitle > h2 {
+		font-size: 1em;
+		margin-right:3vw;
+		margin-top: 2vw;
+		color:white;
+	}
+	.nav {
+		display: none;
+	}
+}
+@media (min-width: 500px) {
+	.cont {
+		margin: 4em;
+		margin-top: 0;
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 4em;
+		grid-template-areas: 
+		"devmeetup makeathons"
+		"missionhead missionhead"
+		"missionimg missiontxt"
+		"socialmedia contactform"
+		"sponsors about";
+	}	
+	h2 {
+		float: right;
+		display: inline;
+		/*margin: 5vw;*/
+		margin-right:6vw;
+		margin-top: 4vw;
+		color:white;
+	}
+	.subtitle > h2 {
+		font-size: 1.75em;
+	}
+	.title > h1 {
+		color: white;
+		font-size: 3em;
+		margin-top: 0;
+		margin-left: 5vw;
+		margin-right: 6vw;
+		margin-bottom: 0;
+	}
+}
 
 /* header styling */
 .header {
+	margin-top: 2vh;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas: 
 	"icon nav nav"
 	"title title title"
@@ -21,56 +95,143 @@ p {
 .icon {
 	grid-area: icon;
 }
+.icon > img {
+	width:25vw;
+	padding:.5vw;
+	padding-left: 3vw;
+	padding-top: 1vh;
+}
 .nav {
 	grid-area: nav;
 }
 .title {
 	grid-area: title;
+	padding: 2em;
 }
 .subtitle {
 	grid-area: subtitle;
+	float:left;
+	display: block;
+	margin-left: 5vw;
 }
+
+/* btns */
+button {
+	color: white;
+	transition-duration: .1s;
+	padding: 12px;
+	font-size: 1.1em;
+	font-weight: 500;
+	border-radius: 5px;
+	background-color: #bbb;
+	border:none;
+	box-shadow: 0px 1px 5px #888;
+}
+.eventsbtn {
+	background-color: #ffb412;
+	margin-left:5vw;
+	margin-right: 15px;
+}
+button:hover {
+	transform: translateY(-1px);
+}
+button:active {
+	background-color: #aaa;
+	transform: translateY(2px);
+}
+.eventsbtn:active {
+	background-color: #eea412
+}
+
+
 /* content styling */
-.cont {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1vw;
-	grid-template-areas: 
-	"introimg introtxt"
-	"imgpanel imgpanel"
-	"subtitle subtitle"
-	"sponsortext sponsortext"
-	"sponsors sponsors"
-	"people people";
-	border:1px solid red;
+
+/*first panels*/
+.makeathons {
+	grid-area: makeathons;
 }
-.imgpanel {
-	grid-area: imgpanel;
-	border:1px solid red;
-	margin:0 auto;
-	margin-top: 5vw;
+.devmeetup {
+	grid-area: devmeetup;
 }
-.panelimg {
-	width:65vw;
+.makeathons:hover {
+	transform: translateY(-2px);
+}
+.devmeetup:hover {
+	transform: translateY(-2px);
+}
+.makeathons:active {
+	transform: translateY(2px);
+	background-color: #efefef;
+}
+.devmeetup:active {
+	transform: translateY(2px);
+	background-color: #efefef;
+}
+.makeathons, .devmeetup {
+	box-shadow: 0px 3px 8px #888;
+	padding: 2em;
+	border-radius: 5px;
+	transition: all .2s ease;
+	background-color: white;
+}
+.makeathons > h3, .devmeetup > h3 {
+	color:#ffb412;
+	text-align: right;
+}
+
+/*intro stuff*/
+.missiontxt {
+	grid-area: missiontxt;
+	height: 100%;
+	vertical-align: middle;
+	padding: .7em;
+}
+.missionimg {
+	grid-area: missionimg;
 	margin: 0 auto;
+	width: 35vw;
 }
-.introtext {
-	grid-area: introtxt;
-	border:1px solid blue;
-}
-.introimg {
-	grid-area: introimg;
-	border:1px solid green;
-	margin: 0 auto;
-}
-.subtitle {
-	grid-area: subtitle;
-	border:1px solid yellow;
+
+.cont > h3 {
+	grid-area: missionhead;
 	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 0;
 }
-.cont > h2 {
-	grid-area: sponsortext;
-	text-align: center;
+
+.mission {
+	grid-area: mission;
+}
+
+
+/*other panels*/
+.socialmedia {
+	grid-area: socialmedia;
+}
+.contactform {
+	grid-area: contactform;
+}
+.sponsors {
+	grid-area: sponsors;
+}
+.about {
+	grid-area: about;
+}
+.socialmedia, .contactform, .sponsors, .about {
+	box-shadow: 0px 3px 8px #888;
+	padding: 1em;
+	border-radius: 5px;
+	transition: all .2s ease;
+	background-color: white;
+	width:30vw;
+	height: 10vw;
+}
+.socialmedia:hover, .contactform:hover, .sponsors:hover, .about:hover {
+	transform: translateY(-2px);
+}
+.socialmedia:active, .contactform:active, .sponsors:active, .about:active {
+	transform: translateY(2px);
+	background-color: #efefef;
 }
 .footer {
 	display:grid;
