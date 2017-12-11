@@ -5,7 +5,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 	background-image: url(mockup/img/bg.png);
-	background-size:100%;
+	background-size:100vw 120vh;
 	background-repeat: no-repeat;
 }
 p {	font-size: 1.15em;
@@ -46,6 +46,10 @@ p {	font-size: 1.15em;
 	.nav {
 		display: none;
 	}
+	.socialmedia, .contactform, .sponsors, .about {
+		width:80vw;
+		height:35vw;
+	}
 }
 @media (min-width: 500px) {
 	.cont {
@@ -79,6 +83,10 @@ p {	font-size: 1.15em;
 		margin-left: 5vw;
 		margin-right: 6vw;
 		margin-bottom: 0;
+	}
+	.socialmedia, .contactform, .sponsors, .about {
+		width:35vw;
+		height:10vw;
 	}
 }
 
@@ -173,9 +181,12 @@ button:active {
 	border-radius: 5px;
 	transition: all .2s ease;
 	background-color: white;
+	border-bottom: 3px solid #00ee88;
+	/*border-bottom: 3px solid #0088ff;*/
 }
 .makeathons > h3, .devmeetup > h3 {
-	color:#ffb412;
+	color:#00ee88;
+	/*color: #0088ff;*/
 	text-align: right;
 }
 
@@ -223,8 +234,14 @@ button:active {
 	border-radius: 5px;
 	transition: all .2s ease;
 	background-color: white;
-	width:30vw;
-	height: 10vw;
+	margin:0 auto;
+	border-bottom: 3px solid #00ee88;
+	/*border-bottom: 3px solid #0088ff;*/
+}
+/* 0 122 255 > 0088ff*/
+.socialmedia > h4, .contactform > h4, .sponsors > h4, .about > h4 {
+	color: #00ee88;
+	/*color: #0088FF;*/
 }
 .socialmedia:hover, .contactform:hover, .sponsors:hover, .about:hover {
 	transform: translateY(-2px);
