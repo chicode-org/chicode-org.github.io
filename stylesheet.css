@@ -4,7 +4,7 @@ button { margin-bottom: 15vh; }
 html,body {
 	margin: 0;
 	padding: 0;
-	background-image: url(mockup/img/bg.png);
+	background-image: url(img/bg.png);
 	background-size:100vw 120vh;
 	background-repeat: no-repeat;
 }
@@ -18,7 +18,7 @@ p {	font-size: 1.15em;
 		margin-top: 0;
 		display:grid;
 		grid-gap: 1em;
-		grid-template-areas: 
+		grid-template-areas:
 		"devmeetup"
 		"makeathons"
 		"missionhead"
@@ -58,13 +58,13 @@ p {	font-size: 1.15em;
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 4em;
-		grid-template-areas: 
+		grid-template-areas:
 		"devmeetup makeathons"
 		"missionhead missionhead"
 		"missionimg missiontxt"
 		"socialmedia contactform"
 		"sponsors about";
-	}	
+	}
 	h2 {
 		float: right;
 		display: inline;
@@ -95,7 +95,7 @@ p {	font-size: 1.15em;
 	margin-top: 2vh;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: 
+	grid-template-areas:
 	"icon nav nav"
 	"title title title"
 	"subtitle subtitle subtitle";
