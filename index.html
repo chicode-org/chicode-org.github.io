@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106173544-5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-106173544-5');
+	</script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:600,700" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-	<div class="header">
-		<div class="icon"><img src="img/logo_text.png"></div>
-		<div class="nav"><h2>Makeathons<h2><h2>Meetups</h2><h2>About</h2><h2>Contact Us</h2></div>
-		<div class="title"><h1>Helping Chicago's Youth Discover Code</h1></div>
-		<div class="subtitle"><h2>Chicago's center for high school coding meetups and makeathons</h2></div>
-	</div>
-	<button class="eventsbtn">Upcoming Events</button>
-	<button class="contactbtn">Contact Us</button>
-		<div class="cont">
-			<div class="makeathons">
-				<h3>Makeathons   -></h3>
-				<p>Makeathons are a twist on the original hackathon model to make them more accessible. It is a 12 hour long hackathon-like event that is focused on creating things with technology. Students are encouraged to work collaboratively in groups with their friends. Throughout the event there are fun workshops where students who range from beginners in coding to advanced can learn about various technologies. At the end, those projects are judged and the most creative, innovative, or beneficial projects win.</p>
-			</div>
-			<div class="devmeetup">
-				<h3>Young Developer Meetups   -></h3>
-				<p>Calling all middle and high school students! You'll feel right at home whether you're a software guru or have never touched a computer. You don't have to be a "math person" or a "techy person" to join: all we ask is that you bring a desire and passion to learn new things. Led by students like you, we are dedicated to connecting and empowering young people to write code. Our meetups are split into two sections: first we have hour-long workshops that teach some part of coding, and then we split into groups and work together on different projects.</p>
-			</div>
-			<h3>Helping teach CPS students code</h3>
-			<img class="missionimg" src='http://via.placeholder.com/350x230'>
-			<div class="missiontxt">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-		<div class="socialmedia">
-			<h4>Connect with us!</h4>
-		</div>
-		<div class="contactform">
-			<h4>Contact Us!</h4>
-		</div>
-		<div class="sponsors">
-			<h4>See our sponsors!</h4>
-		</div>
-		<div class="about">
-			<h4>About us</h4>
+	<div class="header with-background">
+		<div class="background"></div>
+		<img src="img/logo_text.svg">
+		<div class="content">
+			<h1>Helping Chicago's Youth Discover Code</h1>
+			<h2>a network of awesome events and clubs</h2>
+			<a class="button" href="https://goo.gl/forms/B8URQvrz2ArAyAff1"><button>join us — apply for your school</button></a>
 		</div>
 	</div>
-	<div class="footer">
-		<h1>Relevant footer info</h1>
+	<div class="makeathons content">
+		<div class="row">
+			<img src="img/makeathon.jpg">
+			<div class="text">
+				<h1>Makeathons</h1>
+				<h2>12 hours of awesome</h2>
+				<p>
+					Makeathons bring together the community in an incredible way. You have 12 hours to creat a project according to a theme. During this time, we'll help you learn coding through various workshops and activities.
+				</p>
+				<a class="button" href="upcoming"><button>upcoming events</button></a>
+			</div>
+		</div>
 	</div>
-  </body>
+	<div class="meetup with-background">
+		<div class="background"></div>
+		<div class="content">
+			<h1>The Chicago Young Developers Meetup</h1>
+			<p>
+				Join us bi-weekly in downtown Chicago for a general coding gathering. All levels are welcome! This is a great place to learn and practice for the Makeathons. Each meetup has a workshop on a specific theme and then everyone breaks up to work in teams on different projects.
+			</p>
+			<div class="row">
+				<a class="button" href="developer-meetup/projects"><button>browse projects</button></a>
+				<a class="button" href="developer-meetup"><button>official website</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="clubs content">
+		<div class="row">
+			<div class="text">
+				<h1>Clubs</h1>
+				<p>
+					We help schools start coding clubs. Join our network and we'll give you resources and assistance.
+				</p>
+				<a class="button" href="https://goo.gl/forms/B8URQvrz2ArAyAff1"><button>apply for your school</button></a>
+				<a class="button" href="clubs"><button>view all of our clubs</button></a>
+			</div>
+			<img src="img/club.jpg">
+		</div>
+	</div>
+	<div class="footer with-background">
+		<div class="background"></div>
+		<div class="content">
+			<p>website designed by <a href="https://github.com/jetmate">Anton</a> and Sparks</p>
+			<a class="github-button" href="https://github.com/chicode-org/chicode-website" data-icon="octicon-star" data-size="large" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+		</div>
+	</div>
+</body>
 </html>
