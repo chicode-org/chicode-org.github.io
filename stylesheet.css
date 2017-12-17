@@ -1,3 +1,10 @@
+::-moz-selection {
+  background: #E85A5A;
+}
+::selection {
+  background: #E85A5A;
+}
+
 body {
 	overflow-x: hidden;
 }
@@ -113,8 +120,8 @@ body > * {
 	height: 150px;
 }
 .header .content {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 130px;
+	padding-bottom: 130px;
 }
 .header .background {
 	background: -webkit-linear-gradient(292deg, rgba(89,171,233,1) 24%, rgba(68,225,183,1) 100%);
@@ -172,7 +179,7 @@ body > * {
 	float: right;
 }
 .footer .background {
-	height: 150px;
+	height: 200px;
 }
 .footer .content * {
 	display: inline-block;
@@ -197,7 +204,7 @@ body > * {
 	}
 }
 
-@media screen and (max-width: 1468px) {
+@media screen and (max-width: 1636px) {
 	h1 {
 		font-size: 60px;
 	}
@@ -269,12 +276,18 @@ body > * {
 	}
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
+	.header .content {
+		padding-top: 0;
+	}
 	.clubs .text {
 		margin-left: 0;
 	}
 	.makeathons .text {
 		margin-left: 0;
+	}
+	.header img {
+		margin-top: 10px;
 	}
 }
 
