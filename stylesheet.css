@@ -67,7 +67,7 @@ button:focus {
 }
 a.button {
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	margin-right: 20px;
 }
 
