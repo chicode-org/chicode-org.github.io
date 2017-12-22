@@ -1,0 +1,67 @@
+.makeathons {
+	padding-top: 50px;
+}
+.makeathons .text {
+	margin-left: 70px;
+	-webkit-transform: translateY(-10px);
+	    -ms-transform: translateY(-10px);
+	        transform: translateY(-10px);
+}
+
+.meetup .content {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.meetup .background {
+	background: -webkit-linear-gradient(40deg, #5eb9ff 20%, #3ffcca 100%);
+	background: -o-linear-gradient(40deg, #5eb9ff 20%, rgba(68,225,183,1) 100%);
+	background: linear-gradient(50deg, #5eb9ff 20%, #3ffcca 100%);
+	-webkit-transform: skewY(-2deg);
+	    -ms-transform: skewY(-2deg);
+	        transform: skewY(-2deg);
+	height: 120%;
+}
+
+.clubs .row {
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.clubs .text {
+	margin-right: 30px;
+	-webkit-transform: translateY(50px);
+	    -ms-transform: translateY(50px);
+	        transform: translateY(50px);
+}
+.clubs button {
+	margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 1064px) {
+	.makeathons .text {
+		-webkit-transform: translateY(-30px);
+		    -ms-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.makeathons .text {
+		margin-left: 50px;
+	}
+	.clubs .text {
+		margin-left: 50px;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.clubs .text {
+		margin-left: 0;
+	}
+	.makeathons .text {
+		margin-left: 0;
+	}
+}
+

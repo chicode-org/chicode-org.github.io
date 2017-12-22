@@ -1,4 +1,3 @@
-/* Extras */
 
 ::-moz-selection {
   background: #E85A5A;
@@ -147,45 +146,6 @@ body > * {
 	height: 120%;
 }
 
-.makeathons {
-	padding-top: 50px;
-}
-.makeathons .text {
-	margin-left: 70px;
-	-webkit-transform: translateY(-10px);
-	    -ms-transform: translateY(-10px);
-	        transform: translateY(-10px);
-}
-
-.meetup .content {
-	padding-top: 100px;
-	padding-bottom: 50px;
-}
-.meetup .background {
-	background: -webkit-linear-gradient(40deg, #5eb9ff 20%, #3ffcca 100%);
-	background: -o-linear-gradient(40deg, #5eb9ff 20%, rgba(68,225,183,1) 100%);
-	background: linear-gradient(50deg, #5eb9ff 20%, #3ffcca 100%);
-	-webkit-transform: skewY(-2deg);
-	    -ms-transform: skewY(-2deg);
-	        transform: skewY(-2deg);
-	height: 120%;
-}
-
-.clubs .row {
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-.clubs .text {
-	margin-right: 30px;
-	-webkit-transform: translateY(50px);
-	    -ms-transform: translateY(50px);
-	        transform: translateY(50px);
-}
-.clubs button {
-	margin-bottom: 15px;
-}
-
 .footer {
 	position: unset;
 }
@@ -284,6 +244,8 @@ body > * {
 	}
 }
 
+
+
 @media screen and (max-width: 1286px) {
 	h2 {
 		font-size: 30px;
@@ -296,26 +258,16 @@ body > * {
 	}
 }
 
+
 @media screen and (max-width: 1064px) {
 	.header .background {
 		height: 110%;
-	}
-	.makeathons .text {
-		-webkit-transform: translateY(-30px);
-		    -ms-transform: translateY(-30px);
-		        transform: translateY(-30px);
 	}
 }
 
 @media screen and (max-width: 990px) {
 	.content img {
 		display: none;
-	}
-	.makeathons .text {
-		margin-left: 50px;
-	}
-	.clubs .text {
-		margin-left: 50px;
 	}
 	a.button {
 		display: inline-block;
@@ -341,18 +293,12 @@ body > * {
 	}
 }
 
+
 @media screen and (max-width: 450px) {
 	.header .content {
 		padding-top: 0;
-	}
-	.clubs .text {
-		margin-left: 0;
-	}
-	.makeathons .text {
-		margin-left: 0;
 	}
 	.header img {
 		margin-top: 10px;
 	}
 }
-
