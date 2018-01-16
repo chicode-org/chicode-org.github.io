@@ -268,29 +268,6 @@ button {
 	vertical-align: text-bottom;
 }
 
-
-
-@media screen and (max-width: 1818px) {
-	/* .content img {
-		height: 700px;
-	} */
-}
-/*
-@media screen and (max-width: 1636px) {
-	h1 {
-		font-size: 60px;
-	}
-	h2 {
-		font-size: 40px;
-	}
-	p {
-		font-size: 30px;
-	}
-	button {
-		font-size: 30px;
-	}
-} */
-
 @media screen and (max-width: 1450px) {
 	h2 {
 		font-size: 30px;
