@@ -114,7 +114,7 @@ a.button {
 body > * {
 	position: relative;
 }
-.content img {
+.img {
 	max-width: 40vw;
 }
 
@@ -130,7 +130,7 @@ body > * {
 .header h1 {
 	font-size: 80px;
 }
-.header img {
+.logo {
 	margin: 50px;
 	max-height: 150px;
 }
@@ -148,19 +148,20 @@ body > * {
 	height: 120%;
 }
 
-.makeathons {
+.codeathons {
 	padding-top: 50px;
 }
-.makeathons .text {
+.codeathons .text {
 	margin-left: 70px;
 	-webkit-transform: translateY(-10px);
 	    -ms-transform: translateY(-10px);
 	        transform: translateY(-10px);
 }
 
-/* .makeathons.content {
-	margin-left: 100px;
-} */
+.contacts * {
+	margin: 10px;
+	margin-bottom: 20px;
+}
 
 .meetup .content {
 	padding-top: 100px;
@@ -281,7 +282,7 @@ button {
 	.content {
 		margin: 0 100px;
 	}
-	.makeathons img {
+	.codeathons img {
 		padding-top: 70px;
 	}
 	.clubs img {
@@ -290,16 +291,16 @@ button {
 }
 
 @media screen and (max-width: 1100px) {
-	.content img {
+	.img {
 		display: none;
 	}
-	.makeathons .row, .clubs .row {
+	.codeathons .row, .clubs .row {
 		display: block;
 	}
-	.makeathons .text {
+	.codeathons .text {
 		margin-left: 0;
 	}
-	.makeathons.content {
+	.codeathons.content {
 		margin-left: 100px;
 	}
 	.clubs.content {
@@ -315,7 +316,7 @@ button {
 }
 
 @media screen and (max-width: 923px) {
-	.header img {
+	.logo {
 		width: 300px;
 		margin: 30px;
 	}
@@ -337,7 +338,7 @@ button {
 	.content {
 		margin: 0 30px !important;
 	}
-	.header img {
+	.logo {
 		margin-top: 10px;
 	}
 }
