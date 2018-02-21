@@ -71,8 +71,12 @@ button:focus {
 }
 a.button {
 	text-decoration: none;
-	display: inline-block;
+	/* display: inline-block; */
 	margin-right: 20px;
+
+}
+a {
+	text-decoration: none;
 }
 
 /* Page elements */
@@ -158,9 +162,15 @@ body > * {
 	        transform: translateY(-10px);
 }
 
+.before-contacts {
+	display: inline-block;
+	margin-right: 30px;
+}
+.contacts {
+	display: inline;
+}
 .contacts * {
-	margin: 10px;
-	margin-bottom: 20px;
+	margin: 0 5px;
 }
 
 .meetup .content {
@@ -310,9 +320,9 @@ button {
 		margin-left: 50px;
 		margin-right: 50px;
 	}
-	a.button {
+	/* a.button {
 		display: inline-block;
-	}
+	} */
 }
 
 @media screen and (max-width: 923px) {
@@ -328,6 +338,9 @@ button {
 	}
 	h1 {
 		font-size: 40px;
+	}
+	.contacts {
+		display: block;
 	}
 }
 
